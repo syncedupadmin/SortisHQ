@@ -17,33 +17,33 @@ export default function PlatformPage() {
       icon: <Zap className="h-12 w-12 text-teal" />,
       title: "Signals",
       description:
-        "Real-time behavioral signals that identify high-intent prospects. Track engagement, interest spikes, and buying signals across all touchpoints.",
+        "Real-time behavioral signals that identify high-intent health insurance shoppers. Track plan comparison activity, AEP urgency, and enrollment readiness across all touchpoints.",
       benefits: [
-        "Intent scoring across web & email",
-        "Engagement pattern analysis",
-        "Automated alerts for hot leads",
+        "AEP/SEP enrollment intent scoring",
+        "Plan comparison behavior analysis",
+        "Automated alerts for ready-to-enroll prospects",
       ],
     },
     {
       icon: <Target className="h-12 w-12 text-azure" />,
       title: "Scoring",
       description:
-        "ML-powered lead scoring that learns from your conversions. Automatically prioritize leads based on historical win patterns.",
+        "ML-powered lead scoring that learns from your enrollments. Automatically prioritize shoppers based on demographics, subsidy eligibility, and historical enrollment patterns.",
       benefits: [
-        "Predictive conversion probability",
-        "Custom scoring models",
-        "Team performance insights",
+        "Predictive enrollment probability",
+        "Age/subsidy-based scoring models",
+        "Agent performance insights by product line",
       ],
     },
     {
       icon: <RefreshCw className="h-12 w-12 text-soft" />,
       title: "Sync",
       description:
-        "Seamless two-way sync with your CRM and marketing tools. Data flows automatically, keeping your stack in perfect harmony.",
+        "Seamless two-way sync with your insurance CRM and marketing tools. Lead data flows automatically from capture to enrollment, keeping your agency stack in perfect harmony.",
       benefits: [
-        "Native Salesforce & HubSpot integration",
+        "Native AgencyBloc & EZLynx integration",
         "Real-time bidirectional sync",
-        "Custom field mapping",
+        "Custom field mapping for carrier data",
       ],
     },
   ];
@@ -56,10 +56,11 @@ export default function PlatformPage() {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold mb-6 font-playfair">
-              The Platform That <span className="text-teal">Converts</span>
+              The Platform That <span className="text-teal">Enrolls</span>
             </h1>
             <p className="text-xl text-muted-gray max-w-3xl mx-auto">
-              Three integrated systems working together to transform your lead generation process.
+              Three integrated systems working together to transform health insurance shoppers into
+              enrolled clients.
             </p>
           </div>
 

@@ -17,18 +17,20 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "SortisIQ - Smarter Leads. Stronger Books.",
+    default: "SortisIQ - Smarter Health Insurance Leads. Stronger Books.",
     template: "%s | SortisIQ",
   },
   description:
-    "Predictive signals and conversion playbooks that turn interest into revenue. Transform your lead generation with intelligent scoring and seamless CRM sync.",
+    "Predictive signals and conversion playbooks that turn health insurance shoppers into enrolled clients. Transform your agency's enrollment growth with intelligent scoring and seamless CRM sync for Medicare, ACA, and all health insurance products.",
   keywords: [
-    "lead generation",
-    "predictive analytics",
-    "conversion optimization",
-    "CRM integration",
-    "lead scoring",
-    "marketing automation",
+    "health insurance leads",
+    "Medicare leads",
+    "ACA marketplace leads",
+    "health insurance CRM",
+    "enrollment optimization",
+    "insurance agency growth",
+    "AEP leads",
+    "health insurance marketing",
   ],
   authors: [{ name: "SortisIQ" }],
   creator: "SortisIQ",
@@ -39,13 +41,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     siteName: "SortisIQ",
-    title: "SortisIQ - Smarter Leads. Stronger Books.",
-    description: "Predictive signals and conversion playbooks that turn interest into revenue.",
+    title: "SortisIQ - Smarter Health Insurance Leads. Stronger Books.",
+    description:
+      "Predictive signals and conversion playbooks that turn health insurance shoppers into enrolled clients.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SortisIQ - Smarter Leads. Stronger Books.",
-    description: "Predictive signals and conversion playbooks that turn interest into revenue.",
+    title: "SortisIQ - Smarter Health Insurance Leads. Stronger Books.",
+    description:
+      "Predictive signals and conversion playbooks that turn health insurance shoppers into enrolled clients.",
   },
   robots: {
     index: true,
@@ -83,7 +87,7 @@ export default function RootLayout({
               url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
               logo: `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/logo.jpg`,
               description:
-                "Predictive signals and conversion playbooks that turn interest into revenue.",
+                "Predictive signals and conversion playbooks that turn health insurance shoppers into enrolled clients.",
               sameAs: [],
             }),
           }}

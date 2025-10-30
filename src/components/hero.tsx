@@ -16,13 +16,14 @@ export function Hero() {
           className="text-center"
         >
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 font-playfair">
-            Smarter Leads.
+            Smarter Health Insurance Leads.
             <br />
             <span className="text-teal">Stronger Books.</span>
           </h1>
 
           <p className="text-xl sm:text-2xl text-muted-gray max-w-3xl mx-auto mb-12 leading-relaxed">
-            Predictive signals and conversion playbooks that turn interest into revenue.
+            Predictive signals and conversion playbooks that turn health insurance shoppers into
+            enrolled clients.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

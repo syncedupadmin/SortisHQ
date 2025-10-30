@@ -14,38 +14,40 @@ export default function ProofPage() {
 
   const caseStudies = [
     {
-      company: "Enterprise Law Firm",
-      industry: "Legal Services",
+      company: "Premier Medicare Solutions",
+      industry: "Medicare Advantage & Supplements",
       metrics: {
         cplReduction: "-42%",
         pipelineGrowth: "+185%",
         showUpRate: "+31%",
       },
       quote:
-        "SortisIQ transformed how we qualify and nurture leads. We're closing bigger deals faster than ever.",
-      author: "Managing Partner",
+        "SortisIQ transformed how we qualify and nurture Medicare shoppers during AEP. We're enrolling more clients and spending less on lead costs.",
+      author: "Agency Owner",
     },
     {
-      company: "Financial Advisory Group",
-      industry: "Wealth Management",
+      company: "HealthChoice Insurance Group",
+      industry: "ACA Marketplace Plans",
       metrics: {
         cplReduction: "-38%",
         pipelineGrowth: "+220%",
         showUpRate: "+45%",
       },
-      quote: "The predictive scoring is incredible. We know exactly which prospects to prioritize.",
-      author: "Director of Business Development",
+      quote:
+        "The predictive scoring is incredible. We know exactly which subsidy-eligible prospects to prioritize during open enrollment.",
+      author: "Director of Sales",
     },
     {
-      company: "B2B SaaS Platform",
-      industry: "Technology",
+      company: "Unified Benefits Partners",
+      industry: "Multi-Line Health Insurance",
       metrics: {
         cplReduction: "-55%",
         pipelineGrowth: "+310%",
         showUpRate: "+68%",
       },
-      quote: "ROI was evident within 60 days. Our sales team loves the quality of leads now.",
-      author: "VP of Sales",
+      quote:
+        "ROI was evident within 60 days. Our agents love the quality of health insurance leads now - they're actually enrolling.",
+      author: "VP of Agency Operations",
     },
   ];
 
@@ -60,8 +62,8 @@ export default function ProofPage() {
               Results That <span className="text-teal">Speak</span>
             </h1>
             <p className="text-xl text-muted-gray max-w-3xl mx-auto">
-              Real businesses, real growth. See how SortisIQ helps firms across industries
-              accelerate their pipeline.
+              Real insurance agencies, real enrollment growth. See how SortisIQ helps top agencies
+              build stronger books during AEP and beyond.
             </p>
           </div>
 

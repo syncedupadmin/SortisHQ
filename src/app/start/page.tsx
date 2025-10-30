@@ -60,10 +60,10 @@ export default function StartPage() {
         <div className="container mx-auto px-4 max-w-2xl">
           <div className="text-center mb-12">
             <h1 className="text-5xl font-bold mb-6 font-playfair">
-              Let&apos;s <span className="text-teal">Talk Growth</span>
+              Let&apos;s <span className="text-teal">Talk Book Growth</span>
             </h1>
             <p className="text-xl text-muted-gray">
-              Book a demo and discover how SortisIQ can transform your pipeline.
+              Book a demo and discover how SortisIQ can transform your health insurance agency.
             </p>
           </div>
 
@@ -126,7 +126,7 @@ export default function StartPage() {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Tell us about your goals
+                  Tell us about your agency and enrollment goals
                 </label>
                 <Textarea
                   id="message"

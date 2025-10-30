@@ -65,9 +65,9 @@ export default function HomePage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               {[
                 { value: "42%", label: "Lower CPL" },
-                { value: "3.2x", label: "Pipeline Growth" },
-                { value: "68%", label: "Show-up Rate" },
-                { value: "92%", label: "Client Satisfaction" },
+                { value: "3.2x", label: "Enrollment Growth" },
+                { value: "68%", label: "Application Completion" },
+                { value: "92%", label: "Agent Satisfaction" },
               ].map((metric, i) => (
                 <div key={i}>
                   <div className="text-4xl font-bold text-teal mb-2">{metric.value}</div>
@@ -82,24 +82,24 @@ export default function HomePage() {
         <section className="py-24 px-4">
           <div className="container mx-auto max-w-6xl">
             <h2 className="text-4xl font-bold text-center mb-16 font-playfair">
-              Why Top Firms Choose <span className="text-teal">SortisIQ</span>
+              Why Top Insurance Agencies Choose <span className="text-teal">SortisIQ</span>
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
                   title: "Predictive Signals",
                   description:
-                    "Know which leads are ready to convert before your competitors do. Our AI analyzes engagement patterns to surface high-intent prospects.",
+                    "Know which shoppers are ready to enroll before your competitors do. Our AI analyzes engagement patterns to surface high-intent health insurance prospects during AEP and SEP.",
                 },
                 {
                   title: "Smart Scoring",
                   description:
-                    "Automated lead scoring that learns from your wins. Focus your team's energy on opportunities that actually close.",
+                    "Automated lead scoring that learns from your enrollments. Focus your agents' energy on prospects who are most likely to complete applications and stay enrolled.",
                 },
                 {
                   title: "Seamless Sync",
                   description:
-                    "Native integrations with your CRM and marketing stack. Data flows automatically, no manual work required.",
+                    "Native integrations with your insurance CRM and marketing stack. Lead data flows automatically from capture to enrollment, no manual work required.",
                 },
               ].map((feature, i) => (
                 <div
@@ -118,10 +118,10 @@ export default function HomePage() {
         <section className="py-24 px-4">
           <div className="container mx-auto max-w-4xl text-center">
             <h2 className="text-4xl font-bold mb-6 font-playfair">
-              Ready to Transform Your Pipeline?
+              Ready to Transform Your Book of Business?
             </h2>
             <p className="text-xl text-muted-gray mb-8">
-              Join industry leaders who&apos;ve accelerated growth with SortisIQ.
+              Join top insurance agencies who&apos;ve accelerated enrollment growth with SortisIQ.
             </p>
             <a
               href="/start"

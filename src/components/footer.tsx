@@ -12,7 +12,9 @@ export function Footer() {
               SORT<span className="text-teal">I</span>S
               <span className="text-sm text-muted-gray">IQ</span>
             </h3>
-            <p className="text-sm text-muted-gray">Smarter Leads. Stronger Books.</p>
+            <p className="text-sm text-muted-gray">
+              Smarter Health Insurance Leads. Stronger Books.
+            </p>
           </div>
 
           <div>

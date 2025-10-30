@@ -62,12 +62,12 @@ export function NavBar() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="bg-card-bg border-white/10">
-              <nav className="flex flex-col space-y-4 mt-8">
+              <nav className="flex flex-col items-center space-y-4 mt-8">
                 {links.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="text-lg font-medium text-muted-gray hover:text-txt transition-colors"
+                    className="text-lg font-medium text-muted-gray hover:text-txt transition-colors text-center"
                   >
                     {link.label}
                   </Link>
