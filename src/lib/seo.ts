@@ -317,17 +317,9 @@ export const US_STATES = [
 export const TARGET_KEYWORDS = {
   primary: [
     "health insurance leads",
-    "Medicare leads",
     "ACA marketplace leads",
+    "individual health insurance leads",
     "insurance lead generation",
-  ],
-  medicare: [
-    "Medicare leads for agents",
-    "Medicare Advantage leads",
-    "Medicare supplement leads",
-    "Medigap leads",
-    "Medicare turning 65 leads",
-    "AEP lead generation",
   ],
   aca: [
     "ACA marketplace leads",
@@ -335,13 +327,26 @@ export const TARGET_KEYWORDS = {
     "ACA open enrollment leads",
     "health insurance exchange leads",
     "subsidized health insurance leads",
+    "individual health insurance leads",
+    "family health insurance leads",
+  ],
+  u65: [
+    "under 65 health insurance leads",
+    "U65 health insurance leads",
+    "private health insurance leads",
+    "individual plan leads",
+    "family coverage leads",
+    "SEP leads",
+    "special enrollment period leads",
   ],
   longTail: [
-    "affordable Medicare supplement leads 2025",
-    "exclusive Medicare leads",
-    "real-time health insurance leads",
-    "Medicare AEP lead generation strategy",
+    "affordable ACA marketplace leads 2025",
+    "exclusive health insurance leads",
+    "real-time ACA leads",
+    "open enrollment lead generation strategy",
     "health insurance leads for independent agents",
+    "subsidy eligible health insurance leads",
+    "ACA bronze silver gold platinum leads",
   ],
 };
 

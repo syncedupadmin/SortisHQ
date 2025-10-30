@@ -17,12 +17,12 @@ export default function FAQPage() {
     {
       question: "What types of health insurance leads does SortisIQ provide?",
       answer:
-        "We specialize in Medicare leads (Medicare Advantage, Medicare Supplements/Medigap, and Turning 65), ACA Marketplace leads, and health insurance exchange leads. All leads are pre-qualified with intent scoring and compliance-ready consent tracking.",
+        "We specialize in ACA Marketplace leads (Bronze, Silver, Gold, Platinum plans), individual health insurance leads, family coverage leads, and private health insurance leads for the U65 market (ages 18-64). All leads are pre-qualified with intent scoring and compliance-ready consent tracking.",
     },
     {
       question: "How does your lead scoring system work?",
       answer:
-        "Our AI-powered system analyzes behavioral signals like plan comparison activity, enrollment timeline urgency, subsidy eligibility, and demographic factors to predict enrollment probability. Leads are scored in real-time and prioritized based on likelihood to complete applications.",
+        "Our AI-powered system analyzes behavioral signals like plan comparison activity, subsidy calculator usage, enrollment timeline urgency, and qualifying life events (job loss, marriage, birth) to predict enrollment probability. Leads are scored in real-time based on subsidy eligibility, household income factors, and likelihood to complete applications.",
     },
     {
       question: "Are your leads exclusive or shared?",
@@ -30,9 +30,9 @@ export default function FAQPage() {
         "We offer both exclusive and semi-exclusive lead options. Exclusive leads are delivered to only one agency, while semi-exclusive leads may be shared with 2-3 pre-qualified agencies in non-competing territories. All leads include first-contact priority tracking.",
     },
     {
-      question: "Do you support AEP (Annual Enrollment Period) campaigns?",
+      question: "Do you support ACA Open Enrollment campaigns?",
       answer:
-        "Yes! We provide surge capacity during Medicare AEP (Oct 15 - Dec 7) and ACA Open Enrollment with increased lead volume, priority routing, and real-time alerts for high-intent shoppers. Our AEP-optimized scoring helps you prioritize the most conversion-ready prospects.",
+        "Yes! We provide surge capacity during ACA Open Enrollment Period (November 1 - January 15) with increased lead volume, priority routing, and real-time alerts for subsidy-eligible shoppers. We also generate Special Enrollment Period (SEP) leads year-round for qualifying life events like job loss, marriage, birth, or moving.",
     },
     {
       question: "What CRMs does SortisIQ integrate with?",
@@ -40,14 +40,14 @@ export default function FAQPage() {
         "We offer native integrations with AgencyBloc, EZLynx, Salesforce, HubSpot, and most major insurance CRMs. Custom integrations are available via API. Lead data syncs in real-time with automatic field mapping and status updates.",
     },
     {
-      question: "How do you ensure compliance with CMS regulations?",
+      question: "How do you ensure ACA marketplace compliance?",
       answer:
-        "All Medicare leads meet CMS one-to-one consent requirements implemented in October 2024. We document explicit consent before lead delivery, maintain audit trails, and provide compliance-ready documentation for all interactions. ACA leads follow marketplace consumer protection guidelines.",
+        "All ACA marketplace leads follow healthcare.gov and state-based exchange consumer protection guidelines. We document explicit consent before lead delivery, maintain audit trails for all interactions, and ensure compliance with marketplace privacy requirements. We never sell leads without proper authorization.",
     },
     {
       question: "What's the typical cost per lead?",
       answer:
-        "Lead costs vary by product type, exclusivity, and geography. Medicare supplement leads typically range from $25-$75, Medicare Advantage $15-$45, and ACA marketplace $20-$60. Volume discounts and AEP pricing available. Contact us for custom pricing based on your monthly volume needs.",
+        "Lead costs vary by product type, exclusivity, subsidy eligibility, and geography. ACA marketplace leads typically range from $20-$60, individual health insurance leads $25-$70, and family coverage leads $35-$85. Volume discounts and Open Enrollment pricing available. Contact us for custom pricing based on your monthly volume needs.",
     },
     {
       question: "How quickly are leads delivered after generation?",
@@ -57,12 +57,12 @@ export default function FAQPage() {
     {
       question: "What geographic areas do you cover?",
       answer:
-        "We serve all 50 states with state-specific targeting based on your licensing and carrier appointments. You can filter leads by ZIP code, county, or state, and we account for local Medicare Advantage plan availability and ACA marketplace variations.",
+        "We serve all 50 states with state-specific targeting based on your licensing and carrier appointments. You can filter leads by ZIP code, county, or state. We account for both Federally Facilitated Marketplace (FFM) states and state-based exchanges, ensuring leads match your local marketplace requirements.",
     },
     {
-      question: "Can I target Turning 65 leads specifically?",
+      question: "Can I target subsidy-eligible leads specifically?",
       answer:
-        "Absolutely. Our Turning 65 campaigns target prospects within 90 days of Medicare eligibility (ages 64.5-65.5). We use birthday-based targeting combined with intent signals to identify individuals actively researching their Medicare options before they turn 65.",
+        "Absolutely. We use behavioral signals and demographic indicators to identify subsidy-eligible prospects (138%-400% of Federal Poverty Level). Our lead filters allow you to target households most likely to qualify for Advanced Premium Tax Credits (APTC) and Cost-Sharing Reductions (CSRs).",
     },
     {
       question: "What kind of return can I expect on my lead investment?",

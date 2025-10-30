@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { captureUTMParams } from "@/lib/utm";
 import { ArrowRight, CheckCircle2, Users, TrendingUp, Clock } from "lucide-react";
 
-export default function MedicareLeadsPage() {
+export default function ACAMarketplaceLeadsPage() {
   useEffect(() => {
     captureUTMParams();
   }, []);
@@ -17,39 +17,39 @@ export default function MedicareLeadsPage() {
   const benefits = [
     {
       icon: <Users className="h-8 w-8 text-teal" />,
-      title: "Medicare Advantage & Supplement Leads",
+      title: "ACA Marketplace & Private Plans",
       description:
-        "Access high-intent shoppers comparing MA plans and Medigap policies during critical decision windows.",
+        "Access high-intent shoppers comparing Bronze, Silver, Gold, and Platinum ACA plans. Target subsidy-eligible households and private insurance seekers.",
     },
     {
       icon: <TrendingUp className="h-8 w-8 text-azure" />,
-      title: "Turning 65 Lead Pipeline",
+      title: "U65 Lead Pipeline (Ages 18-64)",
       description:
-        "Capture prospects entering Medicare eligibility with predictive scoring based on age and enrollment timing.",
+        "Capture individuals and families under 65 seeking coverage. Predictive scoring based on subsidy eligibility, life events, and plan comparison behavior.",
     },
     {
       icon: <Clock className="h-8 w-8 text-soft" />,
-      title: "AEP-Optimized Delivery",
+      title: "Open Enrollment Optimized",
       description:
-        "Surge capacity during Annual Enrollment Period with real-time lead scoring and priority routing to your agents.",
+        "Surge capacity during ACA Open Enrollment (Nov 1 - Jan 15) with real-time lead scoring and priority routing for your agents. SEP support year-round.",
     },
   ];
 
   const features = [
     "Real-time lead scoring for enrollment probability",
-    "Intent signals: plan comparison activity, subsidy eligibility checks",
+    "Intent signals: plan comparison, subsidy calculator usage, SEP triggers",
     "Automated CRM sync with AgencyBloc, EZLynx, and major platforms",
-    "Compliance-ready consent tracking (CMS one-to-one requirements)",
-    "Geographic targeting for state-specific Medicare rules",
-    "AEP surge support with priority lead routing",
-    "Turning 65 birthday-based targeting campaigns",
-    "Medigap vs. MA preference detection",
+    "ACA marketplace compliance-ready consent tracking",
+    "Geographic targeting for state-based exchanges vs. FFM",
+    "Open Enrollment surge support with priority routing",
+    "Special Enrollment Period (SEP) lead generation year-round",
+    "Subsidy eligibility detection (138%-400% FPL targeting)",
   ];
 
   const stats = [
     { value: "42%", label: "Lower Cost Per Lead" },
     { value: "185%", label: "Enrollment Growth" },
-    { value: "31%", label: "Higher Show-Up Rate" },
+    { value: "31%", label: "Higher Application Completion" },
   ];
 
   return (
@@ -61,16 +61,17 @@ export default function MedicareLeadsPage() {
           {/* Hero Section */}
           <div className="text-center mb-16">
             <h1 className="text-5xl sm:text-6xl font-bold mb-6 font-playfair">
-              Medicare Leads That <span className="text-teal">Enroll</span>
+              ACA Marketplace Leads That <span className="text-teal">Enroll</span>
             </h1>
             <p className="text-xl text-muted-gray max-w-3xl mx-auto mb-8">
-              Predictive lead generation for Medicare Advantage, Medicare Supplements, and Turning
-              65 campaigns. Connect with ready-to-enroll shoppers during AEP and beyond.
+              Predictive lead generation for ACA marketplace plans, individual coverage, and family
+              policies. Connect with subsidy-eligible shoppers ages 18-64 during Open Enrollment and
+              year-round SEPs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="glow-teal">
                 <Link href="/start">
-                  Get Medicare Leads
+                  Get ACA Marketplace Leads
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
@@ -93,7 +94,7 @@ export default function MedicareLeadsPage() {
           {/* Benefits */}
           <div className="mb-20">
             <h2 className="text-3xl font-bold text-center mb-12 font-playfair">
-              Why Agencies Choose Our Medicare Leads
+              Why Agencies Choose Our ACA Marketplace Leads
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {benefits.map((benefit, i) => (
@@ -129,11 +130,11 @@ export default function MedicareLeadsPage() {
           {/* CTA Section */}
           <div className="text-center bg-gradient-to-br from-teal/10 to-azure/10 rounded-lg p-12 border border-white/10">
             <h2 className="text-3xl font-bold mb-4 font-playfair">
-              Ready to Scale Your Medicare Book?
+              Ready to Scale Your ACA Book of Business?
             </h2>
             <p className="text-xl text-muted-gray mb-8 max-w-2xl mx-auto">
-              Join top Medicare agencies using SortisIQ to capture more AEP enrollments and build
-              sustainable year-round growth.
+              Join top health insurance agencies using SortisIQ to capture more Open Enrollment
+              signups and build sustainable year-round growth with SEP leads.
             </p>
             <Button asChild size="lg" className="glow-teal">
               <Link href="/start">
@@ -153,10 +154,10 @@ export default function MedicareLeadsPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            serviceType: "Medicare Lead Generation",
-            name: "Medicare Leads for Insurance Agents",
+            serviceType: "ACA Marketplace Lead Generation",
+            name: "ACA Marketplace Leads for Insurance Agents",
             description:
-              "High-quality Medicare Advantage, Medicare Supplement, and Turning 65 leads for insurance agencies.",
+              "High-quality ACA marketplace leads, individual health insurance leads, and family coverage leads for insurance agencies serving the U65 market.",
             provider: {
               "@type": "Organization",
               name: "SortisIQ",
@@ -168,27 +169,34 @@ export default function MedicareLeadsPage() {
             },
             hasOfferCatalog: {
               "@type": "OfferCatalog",
-              name: "Medicare Lead Services",
+              name: "ACA Marketplace Lead Services",
               itemListElement: [
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Medicare Advantage Leads",
+                    name: "ACA Marketplace Plan Leads",
                   },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Medicare Supplement (Medigap) Leads",
+                    name: "Individual Health Insurance Leads",
                   },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Turning 65 Medicare Leads",
+                    name: "Family Health Insurance Leads",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Special Enrollment Period (SEP) Leads",
                   },
                 },
               ],

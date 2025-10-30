@@ -87,14 +87,14 @@ export default function HomePage() {
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <a
-                href="/services/medicare-leads"
+                href="/services/aca-marketplace-leads"
                 className="group p-8 rounded-lg bg-card-bg border border-white/10 hover:border-teal/50 transition-all hover:scale-[1.02]"
               >
                 <h3 className="text-2xl font-bold mb-3 group-hover:text-teal transition-colors">
-                  Medicare Leads →
+                  ACA Marketplace Leads →
                 </h3>
                 <p className="text-muted-gray">
-                  Medicare Advantage, Supplements, and Turning 65 leads with AEP surge support.
+                  Individual and family ACA plans for U65 market with Open Enrollment surge support.
                 </p>
               </a>
               <a
