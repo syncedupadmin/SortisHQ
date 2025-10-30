@@ -98,7 +98,7 @@ export default function PlatformPage() {
               href="/start"
               className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-teal text-ink px-8 py-4 hover:bg-teal/90 transition-colors glow-teal"
             >
-              Book Your Demo
+              Get Started
             </a>
           </div>
         </div>

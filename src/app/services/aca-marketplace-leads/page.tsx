@@ -138,7 +138,7 @@ export default function ACAMarketplaceLeadsPage() {
             </p>
             <Button asChild size="lg" className="glow-teal">
               <Link href="/start">
-                Book Your Demo
+                Get Started
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>

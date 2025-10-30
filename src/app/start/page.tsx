@@ -63,7 +63,7 @@ export default function StartPage() {
               Let&apos;s <span className="text-teal">Talk Book Growth</span>
             </h1>
             <p className="text-xl text-muted-gray">
-              Book a demo and discover how SortisIQ can transform your health insurance agency.
+              Get started and discover how SortisIQ can transform your health insurance agency.
             </p>
           </div>
 
@@ -150,7 +150,7 @@ export default function StartPage() {
               )}
 
               <Button type="submit" disabled={status === "loading"} className="w-full glow-teal">
-                {status === "loading" ? "Submitting..." : "Book Demo"}
+                {status === "loading" ? "Submitting..." : "Get Started"}
               </Button>
             </form>
           </div>

@@ -52,7 +52,7 @@ export function NavBar() {
               </Link>
             ))}
             <Button asChild size="sm" className="glow-teal">
-              <Link href="/start">Book a Demo</Link>
+              <Link href="/start">Get Started</Link>
             </Button>
           </div>
 
@@ -75,7 +75,7 @@ export function NavBar() {
                   </Link>
                 ))}
                 <Button asChild className="w-full glow-teal">
-                  <Link href="/start">Book a Demo</Link>
+                  <Link href="/start">Get Started</Link>
                 </Button>
               </nav>
             </SheetContent>
