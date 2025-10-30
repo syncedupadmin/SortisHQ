@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { NavBar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { BackgroundGlows } from "@/components/background-glows";
+import { BackgroundGlows as BG4 } from "@/components/background-glows-4";
 import { captureUTMParams } from "@/lib/utm";
 import { TrendingUp, Users, Calendar } from "lucide-react";
 
@@ -53,7 +53,7 @@ export default function ProofPage() {
 
   return (
     <>
-      <BackgroundGlows />
+      <BG4 />
       <NavBar />
       <main className="min-h-screen pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-6xl">

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { NavBar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { BackgroundGlows } from "@/components/background-glows";
+import { BackgroundGlows as BG4 } from "@/components/background-glows-4";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -54,7 +54,7 @@ export default function StartPage() {
 
   return (
     <>
-      <BackgroundGlows />
+      <BG4 />
       <NavBar />
       <main className="min-h-screen pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-2xl">

@@ -1,59 +1,21 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { NavBar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
-import { BackgroundGlows as BG1 } from "@/components/background-glows-1";
-import { BackgroundGlows as BG2 } from "@/components/background-glows-2";
-import { BackgroundGlows as BG3 } from "@/components/background-glows-3";
 import { BackgroundGlows as BG4 } from "@/components/background-glows-4";
 import { captureUTMParams } from "@/lib/utm";
-import { Button } from "@/components/ui/button";
 
 export default function HomePage() {
-  const [variant, setVariant] = useState(1);
-
   useEffect(() => {
     captureUTMParams();
   }, []);
 
-  const variants = [
-    { id: 1, name: "Enhanced Bokeh", description: "Logo Match" },
-    { id: 2, name: "Animated Particles", description: "Interactive Grid" },
-    { id: 3, name: "Gradient Mesh", description: "Fluid Motion" },
-    { id: 4, name: "Hybrid", description: "All Effects" },
-  ];
-
   return (
     <>
-      {/* Background Variants */}
-      {variant === 1 && <BG1 />}
-      {variant === 2 && <BG2 />}
-      {variant === 3 && <BG3 />}
-      {variant === 4 && <BG4 />}
-
-      {/* Background Control Panel */}
-      <div className="fixed bottom-8 right-8 z-50 glass rounded-lg border border-white/20 p-4 shadow-xl">
-        <div className="text-sm font-medium mb-3 text-center">Background Variant</div>
-        <div className="flex gap-2 mb-3">
-          {variants.map((v) => (
-            <Button
-              key={v.id}
-              onClick={() => setVariant(v.id)}
-              variant={variant === v.id ? "default" : "outline"}
-              size="sm"
-              className={variant === v.id ? "glow-teal" : ""}
-            >
-              {v.id}
-            </Button>
-          ))}
-        </div>
-        <div className="text-xs text-center">
-          <div className="font-semibold text-teal">{variants[variant - 1].name}</div>
-          <div className="text-muted-gray">{variants[variant - 1].description}</div>
-        </div>
-      </div>
+      {/* Background Variant 4 (Hybrid - All Effects) */}
+      <BG4 />
 
       <NavBar />
       <main className="min-h-screen">
