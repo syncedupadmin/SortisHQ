@@ -114,6 +114,42 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Services Grid */}
+        <section className="py-24 px-4 bg-gradient-to-b from-transparent to-card-bg/30">
+          <div className="container mx-auto max-w-6xl">
+            <h2 className="text-4xl font-bold text-center mb-4 font-playfair">
+              Specialized Lead Solutions
+            </h2>
+            <p className="text-center text-muted-gray mb-12">
+              Targeted lead generation for every insurance product line
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <a
+                href="/services/medicare-leads"
+                className="group p-8 rounded-lg bg-card-bg border border-white/10 hover:border-teal/50 transition-all hover:scale-[1.02]"
+              >
+                <h3 className="text-2xl font-bold mb-3 group-hover:text-teal transition-colors">
+                  Medicare Leads →
+                </h3>
+                <p className="text-muted-gray">
+                  Medicare Advantage, Supplements, and Turning 65 leads with AEP surge support.
+                </p>
+              </a>
+              <a
+                href="/faq"
+                className="group p-8 rounded-lg bg-card-bg border border-white/10 hover:border-azure/50 transition-all hover:scale-[1.02]"
+              >
+                <h3 className="text-2xl font-bold mb-3 group-hover:text-azure transition-colors">
+                  Common Questions →
+                </h3>
+                <p className="text-muted-gray">
+                  Learn about pricing, compliance, integrations, and our quality guarantees.
+                </p>
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="py-24 px-4">
           <div className="container mx-auto max-w-4xl text-center">

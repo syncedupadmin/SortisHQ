@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Host
+Host: https://sortisiq.com
+
+# Sitemaps
+Sitemap: https://sortisiq.com/sitemap.xml

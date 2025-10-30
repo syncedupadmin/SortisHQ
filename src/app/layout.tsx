@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { generateLocalBusinessSchema } from "@/lib/seo";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -72,24 +73,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const localBusinessSchema = generateLocalBusinessSchema();
+
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="font-sans">
         {children}
         <Analytics />
+        {/* LocalBusiness Schema with 50 State Service Areas */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "SortisIQ",
-              url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-              logo: `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/logo.jpg`,
-              description:
-                "Predictive signals and conversion playbooks that turn health insurance shoppers into enrolled clients.",
-              sameAs: [],
-            }),
+            __html: JSON.stringify(localBusinessSchema),
           }}
         />
       </body>

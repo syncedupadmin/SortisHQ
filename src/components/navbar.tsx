@@ -20,6 +20,8 @@ export function NavBar() {
   const links = [
     { href: "/platform", label: "Platform" },
     { href: "/proof", label: "Proof" },
+    { href: "/services/medicare-leads", label: "Medicare Leads" },
+    { href: "/faq", label: "FAQ" },
     { href: "/start", label: "Get Started" },
   ];
 
