@@ -80,8 +80,8 @@ export default function SimpleSitePage() {
   // Optimized viewport settings for mobile scroll performance
   const viewportSettings = {
     once: true,
-    amount: 0.3 as const,
-    margin: "0px 0px -100px 0px",
+    amount: 0.2 as const,
+    margin: "0px 0px -50px 0px",
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -95,9 +95,12 @@ export default function SimpleSitePage() {
       <BG4 />
       <NavBar />
 
-      <main className="min-h-screen pt-24 pb-16 relative" style={{ willChange: "transform" }}>
+      <main className="min-h-screen pt-24 pb-16 relative">
         {/* HERO SECTION */}
-        <section className="container mx-auto px-6 py-20 text-center">
+        <section
+          className="container mx-auto px-6 py-20 text-center"
+          style={{ transform: "translate3d(0,0,0)" }}
+        >
           <motion.div
             initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
             animate={shouldAnimate ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
@@ -149,7 +152,10 @@ export default function SimpleSitePage() {
         </section>
 
         {/* 3 S FRAMEWORK SECTION */}
-        <section className="container mx-auto px-6 py-20">
+        <section
+          className="container mx-auto px-6 py-20"
+          style={{ transform: "translate3d(0,0,0)" }}
+        >
           <motion.div
             initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
             whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
@@ -229,7 +235,10 @@ export default function SimpleSitePage() {
         </section>
 
         {/* STATS SECTION */}
-        <section className="container mx-auto px-6 py-20">
+        <section
+          className="container mx-auto px-6 py-20"
+          style={{ transform: "translate3d(0,0,0)" }}
+        >
           <motion.div
             initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
             whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
@@ -286,7 +295,10 @@ export default function SimpleSitePage() {
         </section>
 
         {/* EXCLUSIVITY ADVANTAGE SECTION */}
-        <section className="container mx-auto px-6 py-20">
+        <section
+          className="container mx-auto px-6 py-20"
+          style={{ transform: "translate3d(0,0,0)" }}
+        >
           <motion.div
             initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
             whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
@@ -325,7 +337,10 @@ export default function SimpleSitePage() {
         </section>
 
         {/* TESTIMONIALS SECTION */}
-        <section className="container mx-auto px-6 py-20">
+        <section
+          className="container mx-auto px-6 py-20"
+          style={{ transform: "translate3d(0,0,0)" }}
+        >
           <motion.div
             initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
             whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
@@ -413,7 +428,10 @@ export default function SimpleSitePage() {
         </section>
 
         {/* OPEN ENROLLMENT SECTION */}
-        <section className="container mx-auto px-6 py-20">
+        <section
+          className="container mx-auto px-6 py-20"
+          style={{ transform: "translate3d(0,0,0)" }}
+        >
           <motion.div
             initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
             whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
@@ -478,7 +496,10 @@ export default function SimpleSitePage() {
         </section>
 
         {/* FINAL CTA SECTION */}
-        <section className="container mx-auto px-6 py-20">
+        <section
+          className="container mx-auto px-6 py-20"
+          style={{ transform: "translate3d(0,0,0)" }}
+        >
           <motion.div
             initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
             whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
