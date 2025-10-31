@@ -12,7 +12,6 @@ import {
   Zap,
   Target,
   RefreshCw,
-  TrendingUp,
   Users,
   CheckCircle2,
   Calendar,
@@ -56,6 +55,35 @@ export default function SimpleSitePage() {
     agency: "",
   });
 
+  // Detect reduced motion preference for better mobile performance
+  const [shouldAnimate, setShouldAnimate] = useState(() => {
+    // Initialize based on media query to avoid cascading renders
+    if (typeof window !== "undefined") {
+      const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+      return !mediaQuery.matches;
+    }
+    return true;
+  });
+
+  useEffect(() => {
+    // Listen for changes to reduced motion preference
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    const handleChange = (e: MediaQueryListEvent) => {
+      setShouldAnimate(!e.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
+
+  // Optimized viewport settings for mobile scroll performance
+  const viewportSettings = {
+    once: true,
+    amount: 0.3 as const,
+    margin: "0px 0px -100px 0px",
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
@@ -67,12 +95,12 @@ export default function SimpleSitePage() {
       <BG4 />
       <NavBar />
 
-      <main className="min-h-screen pt-24 pb-16 relative">
+      <main className="min-h-screen pt-24 pb-16 relative" style={{ willChange: "transform" }}>
         {/* HERO SECTION */}
         <section className="container mx-auto px-6 py-20 text-center">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
+            animate={shouldAnimate ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             <h1 className="font-playfair text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-teal via-azure to-soft-blue bg-clip-text text-transparent">
@@ -82,7 +110,7 @@ export default function SimpleSitePage() {
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-gray mb-4 max-w-4xl mx-auto leading-relaxed">
-              AI-powered platform delivers subsidy-eligible shoppers who are ready to enroll{" "}
+              AI-powered platform delivers high-intent shoppers who are ready to enroll{" "}
               <span className="text-teal font-semibold">RIGHT NOW</span> - in 60 seconds or less.
             </p>
 
@@ -109,8 +137,8 @@ export default function SimpleSitePage() {
 
             {/* Live counter animation */}
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              initial={shouldAnimate ? { opacity: 0 } : false}
+              animate={shouldAnimate ? { opacity: 1 } : { opacity: 1 }}
               transition={{ delay: 1, duration: 1 }}
               className="mt-12 text-muted-gray text-sm"
             >
@@ -123,9 +151,9 @@ export default function SimpleSitePage() {
         {/* 3 S FRAMEWORK SECTION */}
         <section className="container mx-auto px-6 py-20">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
+            whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
+            viewport={viewportSettings}
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
@@ -140,9 +168,9 @@ export default function SimpleSitePage() {
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* SIGNALS */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
+              whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
+              viewport={viewportSettings}
               transition={{ delay: 0.1, duration: 0.6 }}
             >
               <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-teal/50 transition-all hover:glow-teal h-full">
@@ -152,17 +180,17 @@ export default function SimpleSitePage() {
                 <h3 className="font-playfair text-2xl font-bold mb-4 text-txt">SIGNALS</h3>
                 <p className="text-muted-gray leading-relaxed">Real-time behavioral tracking</p>
                 <p className="text-txt/80 mt-4 text-sm leading-relaxed">
-                  We track subsidy calculator usage, plan comparisons, and SEP triggers to catch
-                  shoppers at peak intent
+                  We track behavioral signals, plan comparisons, and SEP triggers to catch shoppers
+                  at peak intent
                 </p>
               </Card>
             </motion.div>
 
             {/* SCORING */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
+              whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
+              viewport={viewportSettings}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
               <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-azure/50 transition-all hover:glow-azure h-full">
@@ -180,9 +208,9 @@ export default function SimpleSitePage() {
 
             {/* SYNC */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
+              whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
+              viewport={viewportSettings}
               transition={{ delay: 0.3, duration: 0.6 }}
             >
               <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-soft-blue/50 transition-all h-full">
@@ -203,9 +231,9 @@ export default function SimpleSitePage() {
         {/* STATS SECTION */}
         <section className="container mx-auto px-6 py-20">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
+            whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
+            viewport={viewportSettings}
             transition={{ duration: 0.6 }}
             className="glass rounded-3xl p-12 max-w-5xl mx-auto border border-white/10"
           >
@@ -260,9 +288,9 @@ export default function SimpleSitePage() {
         {/* EXCLUSIVITY ADVANTAGE SECTION */}
         <section className="container mx-auto px-6 py-20">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
+            whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
+            viewport={viewportSettings}
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
@@ -299,9 +327,9 @@ export default function SimpleSitePage() {
         {/* TESTIMONIALS SECTION */}
         <section className="container mx-auto px-6 py-20">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
+            whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
+            viewport={viewportSettings}
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
@@ -316,9 +344,9 @@ export default function SimpleSitePage() {
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Testimonial 1 */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              initial={shouldAnimate ? { opacity: 0, x: -30 } : false}
+              whileInView={shouldAnimate ? { opacity: 1, x: 0 } : undefined}
+              viewport={viewportSettings}
               transition={{ delay: 0.1, duration: 0.6 }}
             >
               <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-teal/50 transition-all h-full">
@@ -350,9 +378,9 @@ export default function SimpleSitePage() {
 
             {/* Testimonial 2 */}
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              initial={shouldAnimate ? { opacity: 0, x: 30 } : false}
+              whileInView={shouldAnimate ? { opacity: 1, x: 0 } : undefined}
+              viewport={viewportSettings}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
               <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-azure/50 transition-all h-full">
@@ -387,9 +415,9 @@ export default function SimpleSitePage() {
         {/* OPEN ENROLLMENT SECTION */}
         <section className="container mx-auto px-6 py-20">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
+            whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
+            viewport={viewportSettings}
             transition={{ duration: 0.6 }}
             className="max-w-5xl mx-auto"
           >
@@ -452,9 +480,9 @@ export default function SimpleSitePage() {
         {/* FINAL CTA SECTION */}
         <section className="container mx-auto px-6 py-20">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
+            whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
+            viewport={viewportSettings}
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
