@@ -146,7 +146,7 @@ export default function SimpleSitePage() {
               transition={{ delay: 0.1, duration: 0.6 }}
             >
               <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-teal/50 transition-all hover:glow-teal h-full">
-                <div className="w-16 h-16 bg-teal/10 rounded-xl flex items-center justify-center mb-6 glow-teal">
+                <div className="w-16 h-16 bg-teal/10 rounded-xl flex items-center justify-center mb-6 glow-teal mx-auto">
                   <Zap className="w-8 h-8 text-teal" />
                 </div>
                 <h3 className="font-playfair text-2xl font-bold mb-4 text-txt">SIGNALS</h3>
@@ -166,7 +166,7 @@ export default function SimpleSitePage() {
               transition={{ delay: 0.2, duration: 0.6 }}
             >
               <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-azure/50 transition-all hover:glow-azure h-full">
-                <div className="w-16 h-16 bg-azure/10 rounded-xl flex items-center justify-center mb-6 glow-azure">
+                <div className="w-16 h-16 bg-azure/10 rounded-xl flex items-center justify-center mb-6 glow-azure mx-auto">
                   <Target className="w-8 h-8 text-azure" />
                 </div>
                 <h3 className="font-playfair text-2xl font-bold mb-4 text-txt">SCORING</h3>
@@ -186,7 +186,7 @@ export default function SimpleSitePage() {
               transition={{ delay: 0.3, duration: 0.6 }}
             >
               <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-soft-blue/50 transition-all h-full">
-                <div className="w-16 h-16 bg-soft-blue/10 rounded-xl flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-soft-blue/10 rounded-xl flex items-center justify-center mb-6 mx-auto">
                   <RefreshCw className="w-8 h-8 text-soft-blue" />
                 </div>
                 <h3 className="font-playfair text-2xl font-bold mb-4 text-txt">SYNC</h3>
@@ -467,7 +467,7 @@ export default function SimpleSitePage() {
 
             {/* Offer card */}
             <Card className="glass glow-teal border-2 border-teal/30 p-10 rounded-3xl mb-12">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-teal/20 rounded-2xl mb-6">
+              <div className="flex items-center justify-center w-16 h-16 bg-teal/20 rounded-2xl mb-6 mx-auto">
                 <Award className="w-8 h-8 text-teal" />
               </div>
 
