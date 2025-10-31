@@ -257,7 +257,7 @@ export default function SimpleSitePage() {
           </motion.div>
         </section>
 
-        {/* SUBSIDY ADVANTAGE SECTION */}
+        {/* EXCLUSIVITY ADVANTAGE SECTION */}
         <section className="container mx-auto px-6 py-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -269,26 +269,26 @@ export default function SimpleSitePage() {
             <Card className="bg-gradient-to-br from-teal/5 to-azure/5 border border-teal/20 p-10 rounded-3xl">
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-teal/20 rounded-2xl flex items-center justify-center flex-shrink-0 glow-teal">
-                  <TrendingUp className="w-8 h-8 text-teal" />
+                  <Award className="w-8 h-8 text-teal" />
                 </div>
                 <div>
                   <h3 className="font-playfair text-3xl font-bold mb-4 text-txt">
-                    The Subsidy Advantage
+                    The Exclusivity Advantage
                   </h3>
                   <p className="text-lg text-txt/90 mb-4 leading-relaxed">
                     <span className="font-semibold text-teal">
-                      Why we only target subsidy-eligible families
+                      Why shared leads are killing your ROI
                     </span>
                   </p>
                   <p className="text-muted-gray leading-relaxed">
-                    Households earning{" "}
-                    <span className="text-teal font-semibold">
-                      138-400% of federal poverty level
-                    </span>{" "}
-                    qualify for premium tax credits. They convert{" "}
-                    <span className="text-azure font-semibold">3x better</span>, stay enrolled
-                    longer, and refer more. We don&apos;t waste your time on high-income
-                    tire-kickers.
+                    When a lead is sold to{" "}
+                    <span className="text-teal font-semibold">10-20 other agents</span>, you&apos;re
+                    competing on price alone. With our{" "}
+                    <span className="text-azure font-semibold">
+                      exclusive and semi-exclusive options
+                    </span>
+                    , you&apos;re first (or only) to call. The math is simple: fewer competitors =
+                    higher conversion rates, better relationships, and premium pricing power.
                   </p>
                 </div>
               </div>
