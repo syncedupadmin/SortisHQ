@@ -18,7 +18,7 @@ export function NavBar() {
   }, []);
 
   const links = [
-    { href: "/platform", label: "Platform" },
+    { href: "/leads", label: "Leads" },
     { href: "/proof", label: "Proof" },
     { href: "/services/aca-marketplace-leads", label: "ACA Marketplace" },
     { href: "/faq", label: "FAQ" },

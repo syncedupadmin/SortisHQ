@@ -24,12 +24,11 @@ export default function HomePage() {
         {/* Metrics Strip */}
         <section className="py-16 px-4 border-y border-white/10">
           <div className="container mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
               {[
-                { value: "42%", label: "Lower CPL" },
+                { value: "21%", label: "Lower CPL" },
                 { value: "3.2x", label: "Enrollment Growth" },
-                { value: "68%", label: "Application Completion" },
-                { value: "92%", label: "Agent Satisfaction" },
+                { value: "100%", label: "Agency Satisfaction" },
               ].map((metric, i) => (
                 <div key={i}>
                   <div className="text-4xl font-bold text-teal mb-2">{metric.value}</div>
@@ -51,7 +50,7 @@ export default function HomePage() {
                 {
                   title: "Predictive Signals",
                   description:
-                    "Know which shoppers are ready to enroll before your competitors do. Our AI analyzes engagement patterns to surface high-intent health insurance prospects during AEP and SEP.",
+                    "high-intent health insurance prospects during open enrollment and outside of it, all year long.",
                 },
                 {
                   title: "Smart Scoring",
@@ -60,8 +59,7 @@ export default function HomePage() {
                 },
                 {
                   title: "Seamless Sync",
-                  description:
-                    "Native integrations with your insurance CRM and marketing stack. Lead data flows automatically from capture to enrollment, no manual work required.",
+                  description: "We can integrate with your dialer seamlessly.",
                 },
               ].map((feature, i) => (
                 <div
@@ -91,11 +89,9 @@ export default function HomePage() {
                 className="group p-8 rounded-lg bg-card-bg border border-white/10 hover:border-teal/50 transition-all hover:scale-[1.02]"
               >
                 <h3 className="text-2xl font-bold mb-3 group-hover:text-teal transition-colors">
-                  ACA Marketplace Leads →
+                  U65 Insurance Leads →
                 </h3>
-                <p className="text-muted-gray">
-                  Individual and family ACA plans for U65 market with Open Enrollment surge support.
-                </p>
+                <p className="text-muted-gray">High-intent U65 leads that enroll.</p>
               </a>
               <a
                 href="/faq"

@@ -35,17 +35,6 @@ export default function ACAMarketplaceLeadsPage() {
     },
   ];
 
-  const features = [
-    "Real-time lead scoring for enrollment probability",
-    "Intent signals: plan comparison, subsidy calculator usage, SEP triggers",
-    "Automated CRM sync with AgencyBloc, EZLynx, and major platforms",
-    "ACA marketplace compliance-ready consent tracking",
-    "Geographic targeting for state-based exchanges vs. FFM",
-    "Open Enrollment surge support with priority routing",
-    "Special Enrollment Period (SEP) lead generation year-round",
-    "Subsidy eligibility detection (138%-400% FPL targeting)",
-  ];
-
   const stats = [
     { value: "42%", label: "Lower Cost Per Lead" },
     { value: "185%", label: "Enrollment Growth" },
@@ -107,23 +96,6 @@ export default function ACAMarketplaceLeadsPage() {
                   <p className="text-muted-gray">{benefit.description}</p>
                 </div>
               ))}
-            </div>
-          </div>
-
-          {/* Features List */}
-          <div className="mb-20">
-            <h2 className="text-3xl font-bold text-center mb-12 font-playfair">
-              What&apos;s Included
-            </h2>
-            <div className="bg-card-bg border border-white/10 rounded-lg p-8 max-w-3xl mx-auto">
-              <div className="grid sm:grid-cols-2 gap-4">
-                {features.map((feature, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-teal flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-gray">{feature}</span>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
 

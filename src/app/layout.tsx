@@ -45,12 +45,21 @@ export const metadata: Metadata = {
     title: "SortisIQ - Smarter Health Insurance Leads. Stronger Books.",
     description:
       "Predictive signals and conversion playbooks that turn health insurance shoppers into enrolled clients.",
+    images: [
+      {
+        url: "/logo.jpg",
+        width: 1200,
+        height: 1200,
+        alt: "SortisIQ - Smarter Health Insurance Leads",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "SortisIQ - Smarter Health Insurance Leads. Stronger Books.",
     description:
       "Predictive signals and conversion playbooks that turn health insurance shoppers into enrolled clients.",
+    images: ["/logo.jpg"],
   },
   robots: {
     index: true,

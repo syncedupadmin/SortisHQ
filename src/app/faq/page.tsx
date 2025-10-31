@@ -30,29 +30,8 @@ export default function FAQPage() {
         "We offer both exclusive and semi-exclusive lead options. Exclusive leads are delivered to only one agency, while semi-exclusive leads may be shared with 2-3 pre-qualified agencies in non-competing territories. All leads include first-contact priority tracking.",
     },
     {
-      question: "Do you support ACA Open Enrollment campaigns?",
-      answer:
-        "Yes! We provide surge capacity during ACA Open Enrollment Period (November 1 - January 15) with increased lead volume, priority routing, and real-time alerts for subsidy-eligible shoppers. We also generate Special Enrollment Period (SEP) leads year-round for qualifying life events like job loss, marriage, birth, or moving.",
-    },
-    {
       question: "What CRMs does SortisIQ integrate with?",
-      answer:
-        "We offer native integrations with AgencyBloc, EZLynx, Salesforce, HubSpot, and most major insurance CRMs. Custom integrations are available via API. Lead data syncs in real-time with automatic field mapping and status updates.",
-    },
-    {
-      question: "How do you ensure ACA marketplace compliance?",
-      answer:
-        "All ACA marketplace leads follow healthcare.gov and state-based exchange consumer protection guidelines. We document explicit consent before lead delivery, maintain audit trails for all interactions, and ensure compliance with marketplace privacy requirements. We never sell leads without proper authorization.",
-    },
-    {
-      question: "What's the typical cost per lead?",
-      answer:
-        "Lead costs vary by product type, exclusivity, subsidy eligibility, and geography. ACA marketplace leads typically range from $20-$60, individual health insurance leads $25-$70, and family coverage leads $35-$85. Volume discounts and Open Enrollment pricing available. Contact us for custom pricing based on your monthly volume needs.",
-    },
-    {
-      question: "How quickly are leads delivered after generation?",
-      answer:
-        "Real-time leads are delivered within 60 seconds of capture via email, SMS, and CRM push. Aged leads (24-72 hours old) are available in bulk packages at discounted rates. Our platform includes lead aging filters so you can prioritize fresh prospects.",
+      answer: "We integrate with Convoso, Chase, and TLD.",
     },
     {
       question: "What geographic areas do you cover?",
@@ -60,19 +39,9 @@ export default function FAQPage() {
         "We serve all 50 states with state-specific targeting based on your licensing and carrier appointments. You can filter leads by ZIP code, county, or state. We account for both Federally Facilitated Marketplace (FFM) states and state-based exchanges, ensuring leads match your local marketplace requirements.",
     },
     {
-      question: "Can I target subsidy-eligible leads specifically?",
-      answer:
-        "Absolutely. We use behavioral signals and demographic indicators to identify subsidy-eligible prospects (138%-400% of Federal Poverty Level). Our lead filters allow you to target households most likely to qualify for Advanced Premium Tax Credits (APTC) and Cost-Sharing Reductions (CSRs).",
-    },
-    {
       question: "What kind of return can I expect on my lead investment?",
       answer:
-        "Agencies using SortisIQ report 42% lower cost-per-enrollment, 185% enrollment growth, and 31% higher application completion rates compared to traditional lead sources. ROI depends on your conversion process, but most agencies see positive ROI within 60-90 days.",
-    },
-    {
-      question: "Do you offer lead replacement or guarantees?",
-      answer:
-        "Yes. We provide lead replacement for invalid contact information, wrong demographic data, or duplicate leads within 30 days. Quality guarantees vary by lead type - contact us for specific SLA details for your product mix.",
+        "Results vary by agency, but many clients see improved conversion rates and enrollment growth over time. ROI depends on your follow-up process, lead quality preferences, and market conditions. Most agencies start seeing positive results within their first few months as they optimize their approach.",
     },
   ];
 

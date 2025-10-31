@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function Hero() {
@@ -31,13 +31,6 @@ export function Hero() {
               <Link href="/start">
                 Get Started
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </Button>
-
-            <Button asChild size="lg" variant="ghost" className="group">
-              <Link href="/platform">
-                See the Platform
-                <Play className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>
