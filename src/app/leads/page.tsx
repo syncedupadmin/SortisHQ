@@ -72,15 +72,15 @@ export default function LeadsPage() {
                 key={index}
                 className="grid md:grid-cols-2 gap-12 items-center p-8 rounded-lg bg-card-bg border border-white/10 hover:border-teal/30 transition-colors"
               >
-                <div>
-                  {leadType.icon}
+                <div className="text-center md:text-left">
+                  <div className="flex justify-center md:justify-start">{leadType.icon}</div>
                   <h2 className="text-3xl font-bold mt-6 mb-4">{leadType.title}</h2>
                   <p className="text-lg text-muted-gray mb-6">{leadType.description}</p>
                   <ul className="space-y-3">
                     {leadType.benefits.map((benefit, i) => (
-                      <li key={i} className="flex items-start">
+                      <li key={i} className="flex items-start justify-center md:justify-start">
                         <CheckCircle2 className="h-5 w-5 text-teal mr-3 flex-shrink-0 mt-0.5" />
-                        <span className="text-muted-gray">{benefit}</span>
+                        <span className="text-muted-gray text-left">{benefit}</span>
                       </li>
                     ))}
                   </ul>

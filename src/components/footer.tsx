@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="border-t border-white/10 py-12 mt-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-center md:text-left">
           <div>
             <h3 className="font-bold text-lg mb-4">
               SORT<span className="text-teal">I</span>S
@@ -22,10 +22,10 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/platform"
+                  href="/leads"
                   className="text-sm text-muted-gray hover:text-txt transition-colors"
                 >
-                  Platform
+                  Leads
                 </Link>
               </li>
               <li>

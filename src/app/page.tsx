@@ -24,13 +24,13 @@ export default function HomePage() {
         {/* Metrics Strip */}
         <section className="py-16 px-4 border-y border-white/10">
           <div className="container mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
+            <div className="flex flex-wrap justify-center gap-8 md:gap-12 text-center">
               {[
                 { value: "21%", label: "Lower CPL" },
                 { value: "3.2x", label: "Enrollment Growth" },
                 { value: "100%", label: "Agency Satisfaction" },
               ].map((metric, i) => (
-                <div key={i}>
+                <div key={i} className="min-w-[120px]">
                   <div className="text-4xl font-bold text-teal mb-2">{metric.value}</div>
                   <div className="text-sm text-muted-gray">{metric.label}</div>
                 </div>
@@ -64,7 +64,7 @@ export default function HomePage() {
               ].map((feature, i) => (
                 <div
                   key={i}
-                  className="p-6 rounded-lg bg-card-bg border border-white/10 hover:border-teal/50 transition-colors"
+                  className="p-6 rounded-lg bg-card-bg border border-white/10 hover:border-teal/50 transition-colors text-center md:text-left"
                 >
                   <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
                   <p className="text-muted-gray">{feature.description}</p>

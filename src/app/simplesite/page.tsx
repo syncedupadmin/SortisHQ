@@ -179,8 +179,8 @@ export default function SimpleSitePage() {
               viewport={viewportSettings}
               transition={{ delay: 0.1, duration: 0.6 }}
             >
-              <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-teal/50 transition-all hover:glow-teal h-full">
-                <div className="w-16 h-16 bg-teal/10 rounded-xl flex items-center justify-center mb-6 glow-teal mx-auto">
+              <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-teal/50 transition-all hover:glow-teal h-full text-center md:text-left">
+                <div className="w-16 h-16 bg-teal/10 rounded-xl flex items-center justify-center mb-6 glow-teal mx-auto md:mx-0">
                   <Zap className="w-8 h-8 text-teal" />
                 </div>
                 <h3 className="font-playfair text-2xl font-bold mb-4 text-txt">SIGNALS</h3>
@@ -199,8 +199,8 @@ export default function SimpleSitePage() {
               viewport={viewportSettings}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
-              <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-azure/50 transition-all hover:glow-azure h-full">
-                <div className="w-16 h-16 bg-azure/10 rounded-xl flex items-center justify-center mb-6 glow-azure mx-auto">
+              <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-azure/50 transition-all hover:glow-azure h-full text-center md:text-left">
+                <div className="w-16 h-16 bg-azure/10 rounded-xl flex items-center justify-center mb-6 glow-azure mx-auto md:mx-0">
                   <Target className="w-8 h-8 text-azure" />
                 </div>
                 <h3 className="font-playfair text-2xl font-bold mb-4 text-txt">SCORING</h3>
@@ -219,8 +219,8 @@ export default function SimpleSitePage() {
               viewport={viewportSettings}
               transition={{ delay: 0.3, duration: 0.6 }}
             >
-              <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-soft-blue/50 transition-all h-full">
-                <div className="w-16 h-16 bg-soft-blue/10 rounded-xl flex items-center justify-center mb-6 mx-auto">
+              <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-soft-blue/50 transition-all h-full text-center md:text-left">
+                <div className="w-16 h-16 bg-soft-blue/10 rounded-xl flex items-center justify-center mb-6 mx-auto md:mx-0">
                   <RefreshCw className="w-8 h-8 text-soft-blue" />
                 </div>
                 <h3 className="font-playfair text-2xl font-bold mb-4 text-txt">SYNC</h3>
@@ -364,9 +364,9 @@ export default function SimpleSitePage() {
               viewport={viewportSettings}
               transition={{ delay: 0.1, duration: 0.6 }}
             >
-              <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-teal/50 transition-all h-full">
+              <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-teal/50 transition-all h-full text-center md:text-left">
                 <div className="mb-6">
-                  <div className="flex gap-2 mb-4">
+                  <div className="flex gap-2 mb-4 justify-center md:justify-start">
                     <span className="px-3 py-1 bg-teal/10 text-teal text-xs rounded-full font-semibold">
                       185% Growth
                     </span>
@@ -379,7 +379,7 @@ export default function SimpleSitePage() {
                     and our agents love the quality.&quot;
                   </p>
                 </div>
-                <div className="flex items-center gap-3 border-t border-white/10 pt-4">
+                <div className="flex items-center gap-3 border-t border-white/10 pt-4 justify-center md:justify-start">
                   <div className="w-12 h-12 bg-teal/20 rounded-full flex items-center justify-center">
                     <Users className="w-6 h-6 text-teal" />
                   </div>
@@ -398,9 +398,9 @@ export default function SimpleSitePage() {
               viewport={viewportSettings}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
-              <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-azure/50 transition-all h-full">
+              <Card className="bg-card-bg border border-white/10 p-8 rounded-2xl hover:border-azure/50 transition-all h-full text-center md:text-left">
                 <div className="mb-6">
-                  <div className="flex gap-2 mb-4">
+                  <div className="flex gap-2 mb-4 justify-center md:justify-start">
                     <span className="px-3 py-1 bg-teal/10 text-teal text-xs rounded-full font-semibold">
                       310% Growth
                     </span>
@@ -413,7 +413,7 @@ export default function SimpleSitePage() {
                     game-changer for our team&apos;s efficiency.&quot;
                   </p>
                 </div>
-                <div className="flex items-center gap-3 border-t border-white/10 pt-4">
+                <div className="flex items-center gap-3 border-t border-white/10 pt-4 justify-center md:justify-start">
                   <div className="w-12 h-12 bg-azure/20 rounded-full flex items-center justify-center">
                     <Users className="w-6 h-6 text-azure" />
                   </div>

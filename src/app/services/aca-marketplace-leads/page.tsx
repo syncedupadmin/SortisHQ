@@ -89,9 +89,9 @@ export default function ACAMarketplaceLeadsPage() {
               {benefits.map((benefit, i) => (
                 <div
                   key={i}
-                  className="p-6 rounded-lg bg-card-bg border border-white/10 hover:border-teal/50 transition-colors"
+                  className="p-6 rounded-lg bg-card-bg border border-white/10 hover:border-teal/50 transition-colors text-center md:text-left"
                 >
-                  <div className="mb-4">{benefit.icon}</div>
+                  <div className="mb-4 flex justify-center md:justify-start">{benefit.icon}</div>
                   <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
                   <p className="text-muted-gray">{benefit.description}</p>
                 </div>
