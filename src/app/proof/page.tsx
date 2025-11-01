@@ -14,20 +14,20 @@ export default function ProofPage() {
 
   const caseStudies = [
     {
-      company: "Premier Medicare Solutions",
-      industry: "Medicare Advantage & Supplements",
+      company: "HealthFirst Insurance Partners",
+      industry: "Individual & Family Health Plans",
       metrics: {
-        cplReduction: "-42%",
-        pipelineGrowth: "+185%",
-        showUpRate: "+31%",
+        cplReduction: "-38%",
+        pipelineGrowth: "+165%",
+        showUpRate: "+28%",
       },
       quote:
-        "SortisIQ transformed how we qualify and nurture Medicare shoppers during AEP. We're enrolling more clients and spending less on lead costs.",
+        "SortisIQ helped us better qualify and nurture health insurance shoppers during open enrollment. We've seen improvements in both enrollment rates and lead efficiency.",
       author: "Agency Owner",
     },
     {
       company: "HealthChoice Insurance Group",
-      industry: "ACA Marketplace Plans",
+      industry: "Individual & Family Health Plans",
       metrics: {
         cplReduction: "-38%",
         pipelineGrowth: "+220%",

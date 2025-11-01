@@ -55,7 +55,7 @@ export default function HomePage() {
                 {
                   title: "Smart Scoring",
                   description:
-                    "Automated lead scoring that learns from your enrollments. Focus your agents' energy on prospects who are most likely to complete applications and stay enrolled.",
+                    "Lead scoring that adapts to your enrollment patterns. Help your agents focus on prospects who show stronger interest in completing applications.",
                 },
                 {
                   title: "Seamless Sync",

@@ -17,12 +17,12 @@ export default function FAQPage() {
     {
       question: "What types of health insurance leads does SortisIQ provide?",
       answer:
-        "We specialize in ACA Marketplace leads (Bronze, Silver, Gold, Platinum plans), individual health insurance leads, family coverage leads, and private health insurance leads for the U65 market (ages 18-64). All leads are pre-qualified with intent scoring and compliance-ready consent tracking.",
+        "We focus on individual health insurance leads, family coverage leads, and private health insurance leads for adults under age 65. Our leads include intent scoring and compliance-ready consent tracking.",
     },
     {
       question: "How does your lead scoring system work?",
       answer:
-        "Our AI-powered system analyzes behavioral signals like plan comparison activity, subsidy calculator usage, enrollment timeline urgency, and qualifying life events (job loss, marriage, birth) to predict enrollment probability. Leads are scored in real-time based on subsidy eligibility, household income factors, and likelihood to complete applications.",
+        "Our system analyzes behavioral signals like plan comparison activity, coverage calculator usage, enrollment timeline urgency, and qualifying life events (job loss, marriage, birth) to assess enrollment interest. Leads are scored based on engagement patterns and form completion behavior.",
     },
     {
       question: "Are your leads exclusive or shared?",
