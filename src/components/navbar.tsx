@@ -22,7 +22,6 @@ export function NavBar() {
     { href: "/proof", label: "Proof" },
     { href: "/services/aca-marketplace-leads", label: "ACA Marketplace" },
     { href: "/faq", label: "FAQ" },
-    { href: "/start", label: "Get Started" },
   ];
 
   return (
@@ -74,7 +73,7 @@ export function NavBar() {
                     {link.label}
                   </Link>
                 ))}
-                <Button asChild className="w-full glow-teal">
+                <Button asChild className="w-full glow-teal mt-4">
                   <Link href="/start">Get Started</Link>
                 </Button>
               </nav>
