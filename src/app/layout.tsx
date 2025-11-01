@@ -37,6 +37,10 @@ export const metadata: Metadata = {
   creator: "SortisIQ",
   publisher: "SortisIQ",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  icons: {
+    icon: "/logo.jpg",
+    apple: "/logo.jpg",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -55,7 +59,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "SortisIQ - Smarter Health Insurance Leads. Stronger Books.",
     description:
       "Predictive signals and conversion playbooks that turn health insurance shoppers into enrolled clients.",
@@ -86,6 +90,10 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+      <head>
+        <link rel="apple-touch-icon" href="/logo.jpg" />
+        <meta name="apple-mobile-web-app-title" content="SortisIQ" />
+      </head>
       <body className="font-sans">
         {children}
         <Analytics />
