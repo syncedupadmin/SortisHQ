@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "SortisIQ - Smarter Health Insurance Leads. Stronger Books.",
     description:
       "Predictive signals and conversion playbooks that turn health insurance shoppers into enrolled clients.",
