@@ -17,8 +17,8 @@ export default function StartPage() {
       <BG4 />
       <NavBar />
       <main className="min-h-screen pt-24 pb-16">
-        <div className="container mx-auto px-4 max-w-2xl">
-          <div className="text-center mb-12">
+        <div className="container mx-auto px-0 sm:px-4 max-w-2xl">
+          <div className="text-center mb-12 px-4 sm:px-0">
             <h1 className="text-5xl font-bold mb-6 font-playfair">
               Let&apos;s <span className="text-teal">Talk Book Growth</span>
             </h1>
@@ -27,7 +27,7 @@ export default function StartPage() {
             </p>
           </div>
 
-          <div className="bg-card-bg border border-white/10 rounded-lg p-2 sm:p-4 md:p-8">
+          <div className="bg-card-bg border-0 sm:border border-white/10 rounded-none sm:rounded-lg p-0 sm:p-4 md:p-8">
             <iframe
               src="https://api.leadconnectorhq.com/widget/form/uUcsUyoOtmiIR397sHOb"
               style={{ width: "100%", height: "762px", border: "none", borderRadius: "4px" }}
