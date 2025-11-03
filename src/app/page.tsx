@@ -50,7 +50,7 @@ export default function HomePage() {
                 {
                   title: "Predictive Signals",
                   description:
-                    "high-intent health insurance prospects during open enrollment and outside of it, all year long.",
+                    "HIGH-intent health insurance prospects during open enrollment and outside of it, all year long.",
                 },
                 {
                   title: "Smart Scoring",
