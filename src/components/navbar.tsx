@@ -18,7 +18,7 @@ export function NavBar() {
   }, []);
 
   const links = [
-    { href: "/leads", label: "Leads" },
+    { href: "/leads", label: "U-65 Leads" },
     { href: "/proof", label: "Proof" },
     { href: "/services/aca-marketplace-leads", label: "ACA Marketplace" },
     { href: "/faq", label: "FAQ" },

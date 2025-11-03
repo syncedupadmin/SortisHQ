@@ -36,9 +36,9 @@ export default function ACAMarketplaceLeadsPage() {
   ];
 
   const stats = [
-    { value: "42%", label: "Lower Cost Per Lead" },
-    { value: "185%", label: "Enrollment Growth" },
-    { value: "31%", label: "Higher Application Completion" },
+    { value: "28%", label: "Lower Cost Per Lead" },
+    { value: "115%", label: "Enrollment Growth" },
+    { value: "22%", label: "Higher Application Completion" },
   ];
 
   return (
@@ -89,9 +89,9 @@ export default function ACAMarketplaceLeadsPage() {
               {benefits.map((benefit, i) => (
                 <div
                   key={i}
-                  className="p-6 rounded-lg bg-card-bg border border-white/10 hover:border-teal/50 transition-colors text-center md:text-left"
+                  className="p-6 rounded-lg bg-card-bg border border-white/10 hover:border-teal/50 transition-colors text-center flex flex-col items-center justify-center"
                 >
-                  <div className="mb-4 flex justify-center md:justify-start">{benefit.icon}</div>
+                  <div className="mb-4 flex justify-center">{benefit.icon}</div>
                   <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
                   <p className="text-muted-gray">{benefit.description}</p>
                 </div>

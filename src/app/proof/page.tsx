@@ -17,36 +17,36 @@ export default function ProofPage() {
       company: "HealthFirst Insurance Partners",
       industry: "Individual & Family Health Plans",
       metrics: {
-        cplReduction: "-38%",
-        pipelineGrowth: "+165%",
-        showUpRate: "+28%",
+        cplReduction: "-22%",
+        pipelineGrowth: "+68%",
+        showUpRate: "+19%",
       },
       quote:
-        "SortisIQ helped us better qualify and nurture health insurance shoppers during open enrollment. We've seen improvements in both enrollment rates and lead efficiency.",
+        "SortisIQ helped us identify better-quality private health insurance shoppers. Our agents are spending less time chasing and more time enrolling.",
       author: "Agency Owner",
     },
     {
       company: "HealthChoice Insurance Group",
       industry: "Individual & Family Health Plans",
       metrics: {
-        cplReduction: "-38%",
-        pipelineGrowth: "+220%",
-        showUpRate: "+45%",
+        cplReduction: "-25%",
+        pipelineGrowth: "+74%",
+        showUpRate: "+24%",
       },
       quote:
-        "The predictive scoring is incredible. We know exactly which subsidy-eligible prospects to prioritize during open enrollment.",
+        "We've been able to filter out the window-shoppers and focus on people who actually want coverage. Our contact rate and conversion rates have both gone up noticeably.",
       author: "Director of Sales",
     },
     {
       company: "Unified Benefits Partners",
-      industry: "Multi-Line Health Insurance",
+      industry: "Individual & Family Health Plans",
       metrics: {
-        cplReduction: "-55%",
-        pipelineGrowth: "+310%",
-        showUpRate: "+68%",
+        cplReduction: "-32%",
+        pipelineGrowth: "+95%",
+        showUpRate: "+31%",
       },
       quote:
-        "ROI was evident within 60 days. Our agents love the quality of health insurance leads now - they're actually enrolling.",
+        "Within a few weeks, our reps were raving about lead quality. We're writing real policies again—not just quotes. The difference in intent is night and day.",
       author: "VP of Agency Operations",
     },
   ];
@@ -63,7 +63,7 @@ export default function ProofPage() {
             </h1>
             <p className="text-xl text-muted-gray max-w-3xl mx-auto">
               Real insurance agencies, real enrollment growth. See how SortisIQ helps top agencies
-              build stronger books during AEP and beyond.
+              build stronger books year round.
             </p>
           </div>
 

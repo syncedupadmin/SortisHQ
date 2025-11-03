@@ -64,7 +64,7 @@ export default function HomePage() {
               ].map((feature, i) => (
                 <div
                   key={i}
-                  className="p-6 rounded-lg bg-card-bg border border-white/10 hover:border-teal/50 transition-colors text-center md:text-left"
+                  className="p-6 rounded-lg bg-card-bg border border-white/10 hover:border-teal/50 transition-colors text-center flex flex-col items-center justify-center"
                 >
                   <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
                   <p className="text-muted-gray">{feature.description}</p>
@@ -85,7 +85,7 @@ export default function HomePage() {
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <a
-                href="/services/aca-marketplace-leads"
+                href="/leads"
                 className="group p-8 rounded-lg bg-card-bg border border-white/10 hover:border-teal/50 transition-all hover:scale-[1.02]"
               >
                 <h3 className="text-2xl font-bold mb-3 group-hover:text-teal transition-colors">

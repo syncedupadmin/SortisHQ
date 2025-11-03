@@ -20,11 +20,6 @@ export default function FAQPage() {
         "We focus on individual health insurance leads, family coverage leads, and private health insurance leads for adults under age 65. Our leads include intent scoring and compliance-ready consent tracking.",
     },
     {
-      question: "How does your lead scoring system work?",
-      answer:
-        "Our system analyzes behavioral signals like plan comparison activity, coverage calculator usage, enrollment timeline urgency, and qualifying life events (job loss, marriage, birth) to assess enrollment interest. Leads are scored based on engagement patterns and form completion behavior.",
-    },
-    {
       question: "Are your leads exclusive or shared?",
       answer:
         "We offer both exclusive and semi-exclusive lead options. Exclusive leads are delivered to only one agency, while semi-exclusive leads may be shared with 2-3 pre-qualified agencies in non-competing territories. All leads include first-contact priority tracking.",

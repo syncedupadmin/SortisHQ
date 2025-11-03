@@ -72,15 +72,15 @@ export default function LeadsPage() {
                 key={index}
                 className="grid md:grid-cols-2 gap-12 items-center p-8 rounded-lg bg-card-bg border border-white/10 hover:border-teal/30 transition-colors"
               >
-                <div className="text-center md:text-left">
-                  <div className="flex justify-center md:justify-start">{leadType.icon}</div>
+                <div className="text-center flex flex-col items-center justify-center">
+                  <div className="flex justify-center">{leadType.icon}</div>
                   <h2 className="text-3xl font-bold mt-6 mb-4">{leadType.title}</h2>
                   <p className="text-lg text-muted-gray mb-6">{leadType.description}</p>
                   <ul className="space-y-3">
                     {leadType.benefits.map((benefit, i) => (
-                      <li key={i} className="flex items-start justify-center md:justify-start">
+                      <li key={i} className="flex items-start justify-center">
                         <CheckCircle2 className="h-5 w-5 text-teal mr-3 flex-shrink-0 mt-0.5" />
-                        <span className="text-muted-gray text-left">{benefit}</span>
+                        <span className="text-muted-gray text-center">{benefit}</span>
                       </li>
                     ))}
                   </ul>
@@ -89,18 +89,13 @@ export default function LeadsPage() {
                   <div className="space-y-4">
                     <div className="text-sm text-muted-gray">
                       <div className="mb-2">
-                        <strong className="text-txt">Target Market:</strong> Ages 18-64
+                        <strong className="text-txt">Target Market</strong> – Ages 18-64
                       </div>
                       <div className="mb-2">
-                        <strong className="text-txt">Plans:</strong> Bronze, Silver, Gold, Platinum
-                      </div>
-                      <div className="mb-2">
-                        <strong className="text-txt">Coverage:</strong> ACA Marketplace & Private
-                        Plans
+                        <strong className="text-txt">Coverage</strong> – Health Insurance
                       </div>
                       <div>
-                        <strong className="text-txt">Timing:</strong> Open Enrollment + Year-Round
-                        SEP
+                        <strong className="text-txt">Timing</strong> – Year Round
                       </div>
                     </div>
                   </div>
