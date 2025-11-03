@@ -1,56 +1,16 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import Script from "next/script";
 import { NavBar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { BackgroundGlows as BG4 } from "@/components/background-glows-4";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { captureUTMParams, getStoredUTMParams } from "@/lib/utm";
+import { captureUTMParams } from "@/lib/utm";
 
 export default function StartPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    company: "",
-    message: "",
-  });
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const [errorMessage, setErrorMessage] = useState("");
-
   useEffect(() => {
     captureUTMParams();
   }, []);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus("loading");
-    setErrorMessage("");
-
-    try {
-      const utmParams = getStoredUTMParams();
-      const payload = { ...formData, ...utmParams };
-
-      const response = await fetch("/api/lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-
-      if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.error || "Failed to submit form");
-      }
-
-      setStatus("success");
-      setFormData({ name: "", email: "", phone: "", company: "", message: "" });
-    } catch (error) {
-      setStatus("error");
-      setErrorMessage(error instanceof Error ? error.message : "Something went wrong");
-    }
-  };
 
   return (
     <>
@@ -68,95 +28,28 @@ export default function StartPage() {
           </div>
 
           <div className="bg-card-bg border border-white/10 rounded-lg p-8">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
-                  Full Name *
-                </label>
-                <Input
-                  id="name"
-                  type="text"
-                  required
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="bg-input border-white/10"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
-                  Email *
-                </label>
-                <Input
-                  id="email"
-                  type="email"
-                  required
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="bg-input border-white/10"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                  Phone
-                </label>
-                <Input
-                  id="phone"
-                  type="tel"
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="bg-input border-white/10"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="company" className="block text-sm font-medium mb-2">
-                  Company *
-                </label>
-                <Input
-                  id="company"
-                  type="text"
-                  required
-                  value={formData.company}
-                  onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                  className="bg-input border-white/10"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Tell us about your agency and enrollment goals
-                </label>
-                <Textarea
-                  id="message"
-                  rows={4}
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="bg-input border-white/10"
-                />
-              </div>
-
-              {status === "error" && (
-                <div className="p-4 rounded-lg bg-red-500/10 border border-red-500/20 text-red-400">
-                  {errorMessage}
-                </div>
-              )}
-
-              {status === "success" && (
-                <div className="p-4 rounded-lg bg-teal/10 border border-teal/20 text-teal">
-                  Thanks! We&apos;ll be in touch shortly.
-                </div>
-              )}
-
-              <Button type="submit" disabled={status === "loading"} className="w-full glow-teal">
-                {status === "loading" ? "Submitting..." : "Get Started"}
-              </Button>
-            </form>
+            <iframe
+              src="https://api.leadconnectorhq.com/widget/form/uUcsUyoOtmiIR397sHOb"
+              style={{ width: "100%", height: "762px", border: "none", borderRadius: "4px" }}
+              id="inline-uUcsUyoOtmiIR397sHOb"
+              data-layout='{"id":"INLINE"}'
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Sortis Agency Form"
+              data-height="762"
+              data-layout-iframe-id="inline-uUcsUyoOtmiIR397sHOb"
+              data-form-id="uUcsUyoOtmiIR397sHOb"
+              title="Sortis Agency Form"
+            />
           </div>
         </div>
       </main>
       <Footer />
+      <Script src="https://link.msgsndr.com/js/form_embed.js" strategy="lazyOnload" />
     </>
   );
 }
