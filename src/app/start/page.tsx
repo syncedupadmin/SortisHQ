@@ -27,7 +27,7 @@ export default function StartPage() {
             </p>
           </div>
 
-          <div className="bg-card-bg border border-white/10 rounded-lg p-8">
+          <div className="bg-card-bg border border-white/10 rounded-lg p-2 sm:p-4 md:p-8">
             <iframe
               src="https://api.leadconnectorhq.com/widget/form/uUcsUyoOtmiIR397sHOb"
               style={{ width: "100%", height: "762px", border: "none", borderRadius: "4px" }}
