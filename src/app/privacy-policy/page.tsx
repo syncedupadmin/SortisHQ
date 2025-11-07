@@ -30,18 +30,18 @@ export default function PrivacyPolicyPage() {
             <section className="bg-card-bg border border-white/10 rounded-lg p-8">
               <h2 className="text-2xl font-bold mb-4 text-white">1. Introduction</h2>
               <p className="text-muted-gray leading-relaxed">
-                [COMPANY NAME] (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is committed to
+                SORTISIQ LLC (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is committed to
                 protecting your privacy. This Privacy Policy explains how we collect, use, disclose,
                 and safeguard your information when you visit our website or use our services,
                 including when you provide your phone number and consent to receive SMS messages and
                 phone calls from us.
               </p>
               <p className="text-muted-gray leading-relaxed mt-4">
-                <strong>Business Address:</strong> [BUSINESS ADDRESS]
+                <strong>Business Address:</strong> 925 S FEDERAL HWY, STE 125, BOCA RATON, FL 33432
                 <br />
-                <strong>Contact Email:</strong> [CONTACT EMAIL]
+                <strong>Contact Email:</strong> info@sortisiq.com
                 <br />
-                <strong>Contact Phone:</strong> [PHONE NUMBER]
+                <strong>Contact Phone:</strong> 954-751-5519
               </p>
             </section>
 
@@ -109,7 +109,7 @@ export default function PrivacyPolicyPage() {
               <p className="text-muted-gray leading-relaxed mb-4">
                 By providing your phone number and checking the SMS consent box on our forms, you
                 expressly consent to receive promotional and informational text messages and phone
-                calls from [COMPANY NAME] and our authorized partners at the phone number you
+                calls from SORTISIQ LLC and our authorized partners at the phone number you
                 provided. This consent is not a condition of purchase.
               </p>
 
@@ -130,9 +130,11 @@ export default function PrivacyPolicyPage() {
                 <li>
                   Replying <strong>STOP</strong> to any text message you receive from us
                 </li>
-                <li>Sending an email to [CONTACT EMAIL] with your request to unsubscribe</li>
-                <li>Calling us at [PHONE NUMBER]</li>
-                <li>Sending a written request to [BUSINESS ADDRESS]</li>
+                <li>Sending an email to info@sortisiq.com with your request to unsubscribe</li>
+                <li>Calling us at 954-751-5519</li>
+                <li>
+                  Sending a written request to 925 S FEDERAL HWY, STE 125, BOCA RATON, FL 33432
+                </li>
               </ul>
               <p className="text-muted-gray leading-relaxed mb-4">
                 After you opt out, you will receive one final confirmation message. Please allow up
@@ -142,7 +144,7 @@ export default function PrivacyPolicyPage() {
               <h3 className="text-xl font-semibold mb-3 text-teal">Help Information</h3>
               <p className="text-muted-gray leading-relaxed">
                 For help or more information about SMS messages, reply <strong>HELP</strong> to any
-                text message or contact us at [CONTACT EMAIL] or [PHONE NUMBER].
+                text message or contact us at info@sortisiq.com or 954-751-5519.
               </p>
             </section>
 
@@ -227,7 +229,7 @@ export default function PrivacyPolicyPage() {
                 </li>
               </ul>
               <p className="text-muted-gray leading-relaxed mt-4">
-                To exercise these rights, please contact us at [CONTACT EMAIL] or [PHONE NUMBER].
+                To exercise these rights, please contact us at info@sortisiq.com or 954-751-5519.
               </p>
             </section>
 
@@ -306,19 +308,19 @@ export default function PrivacyPolicyPage() {
               </p>
               <div className="text-muted-gray leading-relaxed">
                 <p>
-                  <strong>[COMPANY NAME]</strong>
+                  <strong>SORTISIQ LLC</strong>
                 </p>
-                <p>[BUSINESS ADDRESS]</p>
+                <p>925 S FEDERAL HWY, STE 125, BOCA RATON, FL 33432</p>
                 <p>
                   Email:{" "}
-                  <a href="mailto:[CONTACT EMAIL]" className="text-teal hover:underline">
-                    [CONTACT EMAIL]
+                  <a href="mailto:info@sortisiq.com" className="text-teal hover:underline">
+                    info@sortisiq.com
                   </a>
                 </p>
                 <p>
                   Phone:{" "}
-                  <a href="tel:[PHONE NUMBER]" className="text-teal hover:underline">
-                    [PHONE NUMBER]
+                  <a href="tel:954-751-5519" className="text-teal hover:underline">
+                    954-751-5519
                   </a>
                 </p>
               </div>

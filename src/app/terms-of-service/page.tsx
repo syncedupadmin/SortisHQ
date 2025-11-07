@@ -31,23 +31,23 @@ export default function TermsOfServicePage() {
             <section className="bg-card-bg border border-white/10 rounded-lg p-8">
               <h2 className="text-2xl font-bold mb-4 text-white">1. Acceptance of Terms</h2>
               <p className="text-muted-gray leading-relaxed">
-                By accessing or using the services provided by [COMPANY NAME] (&quot;we,&quot;
+                By accessing or using the services provided by SORTISIQ LLC (&quot;we,&quot;
                 &quot;us,&quot; or &quot;our&quot;), you agree to be bound by these Terms of
                 Service. If you do not agree to these terms, please do not use our services.
               </p>
               <p className="text-muted-gray leading-relaxed mt-4">
-                <strong>Business Address:</strong> [BUSINESS ADDRESS]
+                <strong>Business Address:</strong> 925 S FEDERAL HWY, STE 125, BOCA RATON, FL 33432
                 <br />
-                <strong>Contact Email:</strong> [CONTACT EMAIL]
+                <strong>Contact Email:</strong> info@sortisiq.com
                 <br />
-                <strong>Contact Phone:</strong> [PHONE NUMBER]
+                <strong>Contact Phone:</strong> 954-751-5519
               </p>
             </section>
 
             <section className="bg-card-bg border border-white/10 rounded-lg p-8">
               <h2 className="text-2xl font-bold mb-4 text-white">2. Description of Services</h2>
               <p className="text-muted-gray leading-relaxed">
-                [COMPANY NAME] provides health insurance lead generation and related services to
+                SORTISIQ LLC provides health insurance lead generation and related services to
                 insurance agencies and individual agents. Our services include lead delivery,
                 predictive scoring, and marketing communications via SMS, email, and phone calls.
               </p>
@@ -61,9 +61,9 @@ export default function TermsOfServicePage() {
               <h3 className="text-xl font-semibold mb-3 text-teal">Program Description</h3>
               <p className="text-muted-gray leading-relaxed mb-4">
                 By opting in to our SMS program, you agree to receive promotional and informational
-                text messages from [COMPANY NAME] about health insurance products, quotes,
-                enrollment periods, and related services. This program allows us to send you
-                important updates and offers via text message to the mobile number you provided.
+                text messages from SORTISIQ LLC about health insurance products, quotes, enrollment
+                periods, and related services. This program allows us to send you important updates
+                and offers via text message to the mobile number you provided.
               </p>
 
               <h3 className="text-xl font-semibold mb-3 text-teal">
@@ -72,12 +72,12 @@ export default function TermsOfServicePage() {
               <p className="text-muted-gray leading-relaxed mb-4">
                 By providing your mobile phone number and checking the SMS consent checkbox on our
                 forms, you expressly consent to receive recurring promotional and informational text
-                messages from [COMPANY NAME] and our authorized partners. You understand that:
+                messages from SORTISIQ LLC and our authorized partners. You understand that:
               </p>
               <ul className="list-disc list-inside text-muted-gray space-y-2 ml-4 mb-4">
                 <li>Consent is not a condition of purchase or use of our services</li>
                 <li>
-                  You may receive messages from [COMPANY NAME] or our authorized insurance agency
+                  You may receive messages from SORTISIQ LLC or our authorized insurance agency
                   partners
                 </li>
                 <li>Your consent applies to the specific mobile number you provided</li>
@@ -113,13 +113,14 @@ export default function TermsOfServicePage() {
                   <strong>QUIT</strong> to any message you receive from us
                 </li>
                 <li>
-                  <strong>Email:</strong> Send your opt-out request to [CONTACT EMAIL]
+                  <strong>Email:</strong> Send your opt-out request to info@sortisiq.com
                 </li>
                 <li>
-                  <strong>Phone:</strong> Call us at [PHONE NUMBER]
+                  <strong>Phone:</strong> Call us at 954-751-5519
                 </li>
                 <li>
-                  <strong>Mail:</strong> Send a written request to [BUSINESS ADDRESS]
+                  <strong>Mail:</strong> Send a written request to 925 S FEDERAL HWY, STE 125, BOCA
+                  RATON, FL 33432
                 </li>
               </ul>
               <p className="text-muted-gray leading-relaxed mb-4">
@@ -137,8 +138,8 @@ export default function TermsOfServicePage() {
                 <li>
                   Reply <strong>HELP</strong> or <strong>INFO</strong> to any text message from us
                 </li>
-                <li>Email us at [CONTACT EMAIL]</li>
-                <li>Call us at [PHONE NUMBER]</li>
+                <li>Email us at info@sortisiq.com</li>
+                <li>Call us at 954-751-5519</li>
               </ul>
 
               <h3 className="text-xl font-semibold mb-3 text-teal">Supported Carriers</h3>
@@ -172,7 +173,7 @@ export default function TermsOfServicePage() {
               <h2 className="text-2xl font-bold mb-4 text-white">4. Phone Call Communications</h2>
               <p className="text-muted-gray leading-relaxed mb-4">
                 By providing your phone number and consenting to receive communications, you also
-                agree to receive phone calls from [COMPANY NAME] and our authorized insurance agency
+                agree to receive phone calls from SORTISIQ LLC and our authorized insurance agency
                 partners. These calls may include:
               </p>
               <ul className="list-disc list-inside text-muted-gray space-y-2 ml-4 mb-4">
@@ -183,7 +184,7 @@ export default function TermsOfServicePage() {
               </ul>
               <p className="text-muted-gray leading-relaxed">
                 You may request to stop receiving calls at any time by informing us during a call,
-                emailing [CONTACT EMAIL], or calling [PHONE NUMBER].
+                emailing info@sortisiq.com, or calling 954-751-5519.
               </p>
             </section>
 
@@ -207,8 +208,8 @@ export default function TermsOfServicePage() {
               <h2 className="text-2xl font-bold mb-4 text-white">6. Intellectual Property</h2>
               <p className="text-muted-gray leading-relaxed">
                 All content, trademarks, logos, and intellectual property displayed on our website
-                and in our communications are the property of [COMPANY NAME] or our licensors. You
-                may not use, reproduce, or distribute any content without our express written
+                and in our communications are the property of SORTISIQ LLC or our licensors. You may
+                not use, reproduce, or distribute any content without our express written
                 permission.
               </p>
             </section>
@@ -230,7 +231,7 @@ export default function TermsOfServicePage() {
             <section className="bg-card-bg border border-white/10 rounded-lg p-8">
               <h2 className="text-2xl font-bold mb-4 text-white">8. Limitation of Liability</h2>
               <p className="text-muted-gray leading-relaxed">
-                To the fullest extent permitted by law, [COMPANY NAME] shall not be liable for any
+                To the fullest extent permitted by law, SORTISIQ LLC shall not be liable for any
                 indirect, incidental, special, consequential, or punitive damages arising out of or
                 related to your use of our services. Our total liability shall not exceed the amount
                 you paid for our services in the past 12 months.
@@ -240,7 +241,7 @@ export default function TermsOfServicePage() {
             <section className="bg-card-bg border border-white/10 rounded-lg p-8">
               <h2 className="text-2xl font-bold mb-4 text-white">9. Indemnification</h2>
               <p className="text-muted-gray leading-relaxed">
-                You agree to indemnify and hold harmless [COMPANY NAME] and its officers, directors,
+                You agree to indemnify and hold harmless SORTISIQ LLC and its officers, directors,
                 employees, and agents from any claims, damages, losses, or expenses arising from
                 your use of our services or violation of these Terms of Service.
               </p>
@@ -270,8 +271,8 @@ export default function TermsOfServicePage() {
               <h2 className="text-2xl font-bold mb-4 text-white">12. Governing Law</h2>
               <p className="text-muted-gray leading-relaxed">
                 These Terms of Service shall be governed by and construed in accordance with the
-                laws of [STATE], without regard to its conflict of law provisions. Any disputes
-                arising from these terms shall be resolved in the courts of [STATE].
+                laws of FL, without regard to its conflict of law provisions. Any disputes arising
+                from these terms shall be resolved in the courts of FL.
               </p>
             </section>
 
@@ -291,19 +292,19 @@ export default function TermsOfServicePage() {
               </p>
               <div className="text-muted-gray leading-relaxed">
                 <p>
-                  <strong>[COMPANY NAME]</strong>
+                  <strong>SORTISIQ LLC</strong>
                 </p>
-                <p>[BUSINESS ADDRESS]</p>
+                <p>925 S FEDERAL HWY, STE 125, BOCA RATON, FL 33432</p>
                 <p>
                   Email:{" "}
-                  <a href="mailto:[CONTACT EMAIL]" className="text-teal hover:underline">
-                    [CONTACT EMAIL]
+                  <a href="mailto:info@sortisiq.com" className="text-teal hover:underline">
+                    info@sortisiq.com
                   </a>
                 </p>
                 <p>
                   Phone:{" "}
-                  <a href="tel:[PHONE NUMBER]" className="text-teal hover:underline">
-                    [PHONE NUMBER]
+                  <a href="tel:954-751-5519" className="text-teal hover:underline">
+                    954-751-5519
                   </a>
                 </p>
               </div>
@@ -316,8 +317,8 @@ export default function TermsOfServicePage() {
                 <Link href="/privacy-policy" className="text-teal hover:underline">
                   Privacy Policy
                 </Link>
-                , constitute the entire agreement between you and [COMPANY NAME] regarding the use
-                of our services.
+                , constitute the entire agreement between you and SORTISIQ LLC regarding the use of
+                our services.
               </p>
             </section>
           </div>
