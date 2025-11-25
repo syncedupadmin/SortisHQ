@@ -32,11 +32,13 @@ export function NavBar() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold tracking-tight">
-              SORT<span className="text-teal">I</span>S
+          <Link href="/" className="flex items-baseline">
+            <span className="text-2xl font-[family-name:var(--font-audiowide)] tracking-tight text-brand-orange">
+              SORTIS
             </span>
-            <span className="text-lg font-semibold text-muted-gray">IQ</span>
+            <span className="text-2xl font-[family-name:var(--font-audiowide)] tracking-tight text-brand-teal">
+              IQ
+            </span>
           </Link>
 
           {/* Desktop Nav */}

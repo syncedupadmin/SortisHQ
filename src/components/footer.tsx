@@ -8,9 +8,11 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-center md:text-left">
           <div>
-            <h3 className="font-bold text-lg mb-4">
-              SORT<span className="text-teal">I</span>S
-              <span className="text-sm text-muted-gray">IQ</span>
+            <h3 className="text-lg mb-4 flex items-baseline">
+              <span className="font-[family-name:var(--font-audiowide)] text-brand-orange">
+                SORTIS
+              </span>
+              <span className="font-[family-name:var(--font-audiowide)] text-brand-teal">IQ</span>
             </h3>
             <p className="text-sm text-muted-gray">
               Smarter Health Insurance Leads. Stronger Books.

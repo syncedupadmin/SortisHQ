@@ -11,6 +11,13 @@
   --color-muted-gray: #a9b1bc;
   --color-card-bg: #121a2c;
 
+  /* Brand colors for SortisIQ logo */
+  --color-brand-orange: hsl(25, 100%, 50%);
+  --color-brand-teal: hsl(180, 100%, 40%);
+
+  /* Font family for logo */
+  --font-audiowide: var(--font-audiowide);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
