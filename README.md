@@ -1,6 +1,6 @@
 # SortisIQ Marketing Site
 
-[![CI/CD](https://github.com/syncedupadmin/SortisHQ/actions/workflows/ci.yml/badge.svg)](https://github.com/syncedupadmin/SortisHQ/actions/workflows/ci.yml)
+[![CI/CD](https://github.com/your-org/SortisHQ/actions/workflows/ci.yml/badge.svg)](https://github.com/your-org/SortisHQ/actions/workflows/ci.yml)
 
 Production-ready, enterprise-grade marketing site built with Next.js 14+, TypeScript, and TailwindCSS. Features animated bokeh backgrounds, UTM tracking, serverless lead forwarding, dynamic OG images, and full SEO optimization.
 
@@ -27,7 +27,7 @@ Production-ready, enterprise-grade marketing site built with Next.js 14+, TypeSc
 
 ```bash
 # Clone the repository
-git clone https://github.com/syncedupadmin/SortisHQ.git
+git clone https://github.com/your-org/SortisHQ.git
 cd sortisiq
 
 # Install dependencies
@@ -135,7 +135,7 @@ Tests are located in `e2e/` directory.
 
 ### Vercel (Recommended)
 
-1. Push code to GitHub: `https://github.com/syncedupadmin/SortisHQ`
+1. Push code to GitHub: `https://github.com/your-org/SortisHQ`
 2. Import project in Vercel dashboard
 3. Configure environment variables in Vercel project settings
 4. Deploy!

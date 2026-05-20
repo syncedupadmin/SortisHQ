@@ -2,6 +2,11 @@
   "name": "sortisiq",
   "version": "0.1.0",
   "private": true,
+  "author": "SortisIQ",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/SortisHQ"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

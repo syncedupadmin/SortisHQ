@@ -19,8 +19,6 @@ export async function POST(request: NextRequest) {
 
     if (!webhookUrl) {
       console.error("[Lead API] LEADCONNECTOR_API_URL not configured");
-      // In development, just log and return success
-      console.log("[Lead API] Would send lead:", body);
       return NextResponse.json({ success: true, message: "Lead received (dev mode)" });
     }
 
@@ -44,7 +42,6 @@ export async function POST(request: NextRequest) {
       throw new Error("Failed to forward lead to webhook");
     }
 
-    console.log("[Lead API] Lead forwarded successfully");
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("[Lead API] Error:", error);
